@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{A27577F4-4857-4F10-A4CE-81474E6BEA6B}</ProjectGuid>
-    <RootNamespace>cppalgorithms</RootNamespace>
+    <ProjectGuid>{BACF395F-D689-43FA-A028-362B8524CA0E}</ProjectGuid>
+    <RootNamespace>babelsort</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,6 +115,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bubble_sort.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="demo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

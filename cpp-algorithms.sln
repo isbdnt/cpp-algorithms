@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-algorithms", "cpp-algorithms\cpp-algorithms.vcxproj", "{A27577F4-4857-4F10-A4CE-81474E6BEA6B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "babel_sort", "sorting\babel_sort\babel_sort.vcxproj", "{BACF395F-D689-43FA-A028-362B8524CA0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Debug|x64.ActiveCfg = Debug|x64
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Debug|x64.Build.0 = Debug|x64
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Debug|x86.ActiveCfg = Debug|Win32
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Debug|x86.Build.0 = Debug|Win32
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Release|x64.ActiveCfg = Release|x64
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Release|x64.Build.0 = Release|x64
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Release|x86.ActiveCfg = Release|Win32
-		{A27577F4-4857-4F10-A4CE-81474E6BEA6B}.Release|x86.Build.0 = Release|Win32
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Debug|x64.ActiveCfg = Debug|x64
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Debug|x64.Build.0 = Debug|x64
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Debug|x86.ActiveCfg = Debug|Win32
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Debug|x86.Build.0 = Debug|Win32
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Release|x64.ActiveCfg = Release|x64
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Release|x64.Build.0 = Release|x64
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Release|x86.ActiveCfg = Release|Win32
+		{BACF395F-D689-43FA-A028-362B8524CA0E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
