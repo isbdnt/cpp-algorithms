@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int arr[] = { 3, 1, 7, 6, 0 };
 
