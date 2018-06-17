@@ -38,7 +38,7 @@ static void MergeSortInternal(T *array, int begin, int end, T *tempArray)
 template<typename T>
 static void MergeSort(T *array, int length)
 {
-	T tempArray = new int[length];
+	T *tempArray = new int[length];
 	CopyArray(array, 0, length, tempArray);
 	MergeSortInternal(array, 0, length, tempArray);
 }

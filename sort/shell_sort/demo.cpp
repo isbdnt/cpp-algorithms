@@ -1,27 +1,9 @@
 #include "shell_sort.h"
-#include<iostream>
-
-using namespace std;
+#include<test_sorting.h>
 
 int main(int argc, char **argv)
 {
-	int arr[] = { 3, 1, 7, 6, 0, 2, 2, 9 };
-
-	for (const int num : arr)
-	{
-		cout << num << " ";
-	}
-	cout << endl;
-
-	ShellSort<int>(arr, 8);
-
-	for (const int num : arr)
-	{
-		cout << num << " ";
-	}
-	cout << endl;
-
-	cin.get();
-
+	TestIntergerSorting(&ShellSort<int>);
+	system("pause");
 	return 0;
 }

@@ -3,6 +3,7 @@
 template<typename T>
 T Max(int array[], int length)
 {
+	if (length <= 0)return 0;
 	int max = array[0];
 	for (int i = 1; i < length; i++)
 	{
