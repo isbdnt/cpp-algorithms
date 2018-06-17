@@ -9,10 +9,9 @@ void Swap(T &a, T &b)
 }
 
 template<typename T>
-void BubbleSort(T array[], int length)
+static void BubbleSort(T array[], int length)
 {
 	bool swapped;
-
 	do
 	{
 		swapped = false;
