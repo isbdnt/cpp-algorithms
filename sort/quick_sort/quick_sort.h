@@ -28,12 +28,13 @@ static int Partition(T *array, int begin, int end)
 			i++; j--;
 		}
 	}
-	Swap(array[begin], array[j]);
+	if (j > begin)
+		Swap(array[begin], array[j]);
 	return j;
 }
 
 template<typename T>
-void QuickSortInternal(T *array, int begin, int end)
+static void QuickSortInternal(T *array, int begin, int end)
 {
 	if (end - begin < 2) return;
 	int pivotIndex = Partition(array, begin, end);
