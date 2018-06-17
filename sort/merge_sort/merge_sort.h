@@ -26,12 +26,12 @@ static void Merge(T *array, int begin, int middle, int end, T *tempArray)
 }
 
 template<typename T>
-static void SplitMerge(T *array, int begin, int end, T *tempArray)
+static void MergeSortInternal(T *array, int begin, int end, T *tempArray)
 {
 	if (end - begin < 2) return;
 	int middle = (end + begin) / 2;
-	SplitMerge(tempArray, begin, middle, array);
-	SplitMerge(tempArray, middle, end, array);
+	MergeSortInternal(tempArray, begin, middle, array);
+	MergeSortInternal(tempArray, middle, end, array);
 	Merge(array, begin, middle, end, tempArray);
 }
 
@@ -40,5 +40,5 @@ static void MergeSort(T *array, int length)
 {
 	T tempArray = new int[length];
 	CopyArray(array, 0, length, tempArray);
-	SplitMerge(array, 0, length, tempArray);
+	MergeSortInternal(array, 0, length, tempArray);
 }
