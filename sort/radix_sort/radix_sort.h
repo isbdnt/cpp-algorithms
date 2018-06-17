@@ -1,7 +1,7 @@
 #pragma once
 
 template<typename T>
-T Max(int array[], int length) //辅助函数，求数据的最大位数
+T Max(int array[], int length)
 {
 	int max = array[0];
 	for (int i = 1; i < length; i++)
@@ -31,7 +31,9 @@ static void RadixSort(T *array, int length)
 			count[k]++;
 		}
 		for (j = 1; j < 10; j++)
+		{
 			count[j] = count[j - 1] + count[j];
+		}
 		for (j = length - 1; j >= 0; j--)
 		{
 			k = (array[j] / i) % 10;
