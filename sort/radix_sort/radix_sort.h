@@ -15,10 +15,10 @@ T Max(int array[], int length)
 template<typename T>
 static void RadixSort(T *array, int length)
 {
-	int maxNumber = Max<T>(array, length);
+	int maxValue = Max<T>(array, length);
 	int *tmp = new int[length];
 	int count[10];
-	for (int i = 1; i <= maxNumber; i *= 10)
+	for (int i = 1; i <= maxValue; i *= 10)
 	{
 		int j, k;
 		for (j = 0; j < 10; j++)
