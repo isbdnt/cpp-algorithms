@@ -1,7 +1,7 @@
 #pragma once
 
 template<typename T>
-static void InsertionSort(T array[], int length)
+static void InsertionSort(T *array, int length)
 {
 	for (int i = 1; i < length; i++)
 	{

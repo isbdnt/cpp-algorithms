@@ -1,4 +1,4 @@
-#include "shell_sort.h"
+#include "merge_sort.h"
 #include<iostream>
 
 using namespace std;
@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	}
 	cout << endl;
 
-	ShellSort<int>(arr, 8);
+	MergeSort<int>(arr, 8);
 
 	for (const int num : arr)
 	{

@@ -1,7 +1,7 @@
 #pragma once
 
 template<typename T>
-static void ShellSort(T array[], int length)
+static void ShellSort(T *array, int length)
 {
 	for (int gap = length / 2; gap > 0; gap /= 2)
 	{

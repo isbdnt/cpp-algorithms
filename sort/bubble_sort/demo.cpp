@@ -3,9 +3,9 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int arr[] = { 3, 1, 7, 6, 0 };
+	int arr[] = { 3, 1, 7, 6, 0, 2, 2, 9 };
 
 	for (const int num : arr)
 	{
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	}
 	cout << endl;
 
-	BubbleSort<int>(arr, 5);
+	BubbleSort<int>(arr, 8);
 
 	for (const int num : arr)
 	{
