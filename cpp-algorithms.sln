@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bubble_sort", "sorting\bubble_sort\bubble_sort.vcxproj", "{0534D1F2-E4D7-47DA-8A7F-A37D124937B2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bubble_sort", "sort\bubble_sort\bubble_sort.vcxproj", "{0534D1F2-E4D7-47DA-8A7F-A37D124937B2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "insertion_sort", "sorting\insertion_sort\insertion_sort.vcxproj", "{32F2E290-F42F-4E0E-B32C-62F258DD9ABF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "insertion_sort", "sort\insertion_sort\insertion_sort.vcxproj", "{32F2E290-F42F-4E0E-B32C-62F258DD9ABF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
