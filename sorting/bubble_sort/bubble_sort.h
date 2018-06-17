@@ -9,7 +9,7 @@ void Swap(T& a, T& b)
 }
 
 template<typename T>
-void BubbleSort(T arr[], int length)
+void BubbleSort(T array[], int length)
 {
 	bool swapped;
 
@@ -18,9 +18,9 @@ void BubbleSort(T arr[], int length)
 		swapped = false;
 		for (int i = 1; i < length; i++)
 		{
-			if (arr[i - 1] > arr[i])
+			if (array[i - 1] > array[i])
 			{
-				Swap(arr[i - 1], arr[i]);
+				Swap(array[i - 1], array[i]);
 				swapped = true;
 			}
 		}

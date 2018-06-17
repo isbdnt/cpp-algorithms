@@ -1,4 +1,4 @@
-#include "bubble_sort.h"
+#include "insertion_sort.h"
 #include<iostream>
 
 using namespace std;
@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 	}
 	cout << endl;
 
-	BubbleSort<int>(arr, 5);
+	InsertionSort<int>(arr, 5);
 
 	for (const int num : arr)
 	{
