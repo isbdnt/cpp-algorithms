@@ -1,7 +1,9 @@
-#pragma once
+﻿#pragma once
+
+//O(n²)
 
 template<typename T>
-void Swap(T &a, T &b)
+void Swap(T& a, T& b)
 {
 	T temp(a);
 	a = b;
@@ -9,13 +11,13 @@ void Swap(T &a, T &b)
 }
 
 template<typename T>
-static void BubbleSort(T *array, int length)
+static void BubbleSort(T* array, int length)
 {
 	bool swapped;
 	do
 	{
 		swapped = false;
-		for (int i = 1; i < length; i++)
+		for (int i = 1; i < length; ++i)
 		{
 			if (array[i - 1] > array[i])
 			{
@@ -23,6 +25,6 @@ static void BubbleSort(T *array, int length)
 				swapped = true;
 			}
 		}
-		length--;
+		--length;
 	} while (swapped);
 }

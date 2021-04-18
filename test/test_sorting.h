@@ -1,7 +1,7 @@
 #pragma once
 #include<iostream>
 
-typedef void(*IntergerSortFunc)(int *, int);
+typedef void(*IntergerSortFunc)(int*, int);
 
 static void TestIntergerSorting(IntergerSortFunc sortFunc)
 {
@@ -10,7 +10,7 @@ static void TestIntergerSorting(IntergerSortFunc sortFunc)
 	int failureCount = 0;
 	for (int i = 0; i < 1000; i++)
 	{
-		int *array = new int[i];
+		int* array = new int[i];
 		for (int j = 0; j < i; j++)
 		{
 			array[j] = rand() % 1000;

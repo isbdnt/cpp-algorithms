@@ -1,14 +1,16 @@
-#pragma once
+﻿#pragma once
+
+//O(nlogn)
 
 template<typename T>
-void CopyArray(T *source, int begin, int end, T *dest)
+void CopyArray(T* source, int begin, int end, T* dest)
 {
 	for (int i = begin; i < end; i++)
 		dest[i] = source[i];
 }
 
 template<typename T>
-static void Merge(T *array, int begin, int middle, int end, T *tempArray)
+static void Merge(T* array, int begin, int middle, int end, T* tempArray)
 {
 	for (int i = begin, j = middle, k = begin; k < end; k++)
 	{
@@ -26,7 +28,7 @@ static void Merge(T *array, int begin, int middle, int end, T *tempArray)
 }
 
 template<typename T>
-static void MergeSortInternal(T *array, int begin, int end, T *tempArray)
+static void MergeSortInternal(T* array, int begin, int end, T* tempArray)
 {
 	if (end - begin < 2) return;
 	int middle = (end + begin) / 2;
@@ -36,9 +38,9 @@ static void MergeSortInternal(T *array, int begin, int end, T *tempArray)
 }
 
 template<typename T>
-static void MergeSort(T *array, int length)
+static void MergeSort(T* array, int length)
 {
-	T *tempArray = new int[length];
+	T* tempArray = new int[length];
 	CopyArray(array, 0, length, tempArray);
 	MergeSortInternal(array, 0, length, tempArray);
 }

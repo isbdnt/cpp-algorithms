@@ -1,7 +1,9 @@
 #pragma once
 
+//O(nlogn)
+
 template<typename T>
-void Swap(T &a, T &b)
+void Swap(T& a, T& b)
 {
 	T temp(a);
 	a = b;
@@ -9,7 +11,7 @@ void Swap(T &a, T &b)
 }
 
 template<typename T>
-static int Partition(T *array, int begin, int end)
+static int Partition(T* array, int begin, int end)
 {
 	Swap(array[begin], array[rand() % (end - begin) + begin]);
 	int pivot = array[begin];
@@ -34,7 +36,7 @@ static int Partition(T *array, int begin, int end)
 }
 
 template<typename T>
-static void QuickSortInternal(T *array, int begin, int end)
+static void QuickSortInternal(T* array, int begin, int end)
 {
 	if (end - begin < 2) return;
 	int pivotIndex = Partition(array, begin, end);
@@ -43,7 +45,7 @@ static void QuickSortInternal(T *array, int begin, int end)
 }
 
 template<typename T>
-static void QuickSort(T *array, int length)
+static void QuickSort(T* array, int length)
 {
 	QuickSortInternal(array, 0, length);
 }

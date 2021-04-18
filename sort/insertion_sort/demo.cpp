@@ -1,7 +1,7 @@
 #include "insertion_sort.h"
-#include<test_sorting.h>
+#include <test_sorting.h>
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
 	TestIntergerSorting(&InsertionSort<int>);
 	system("pause");
